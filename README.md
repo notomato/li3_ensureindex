@@ -17,10 +17,10 @@ Make sure it's added on `app/config/bootstrap/libraries.php`:
 
 ## Index Definition
 
-To define your indexes inside your model, just add a static and public _indexes property, such as:
+To define your indexes inside your model, just add a static and public `indexes` property, such as:
 
     
-    static public $_indexes = array(
+    static public $indexes = array(
         'indexname' =>  array(
             'keys' => array('somefield' => -1)
         )
@@ -39,7 +39,7 @@ Other options detault to these:
 And can be overwritten easily:
 
     
-    static public $_indexes = array(
+    static public $indexes = array(
         'indexname' =>  array(
             'keys' => array('somefield' => -1),
             'background' => false,
