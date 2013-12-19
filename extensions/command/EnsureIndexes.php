@@ -42,8 +42,8 @@ class EnsureIndexes extends \lithium\console\Command
 
         foreach ($models as $model) {
             $model = str_replace("\\\\", "\\", $model);
-            if (property_exists($model, '_indexes')) {
-                $indexes = $model::$_indexes;
+            if (property_exists($model, 'indexes')) {
+                $indexes = $model::$indexes;
                 if (empty($indexes)) {
                     continue;
                 }
