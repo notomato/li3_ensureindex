@@ -18,7 +18,7 @@ class MockModel extends \lithium\data\Model {
         'field2' => array('type' => 'integer'),
     );
 
-    static public $_indexes = array(
+    static public $indexes = array(
         'timestamp' =>  array(
             'keys' => array('timestamp' => -1),
             'unique' => false
